@@ -10,6 +10,23 @@ section .section-title {
     margin-bottom: 50px;
     text-transform: uppercase;
 }
+body { padding-top: 70px; }
+
+nav {
+    color:#ffffff;
+    text-decoration: none !important;
+      background: #007b5e !important;
+    -webkit-text-decoration-skip: objects;
+}
+
+.navbar-default .navbar-nav>li>a {
+color:#ffffff;
+}
+
+.navbar-default .navbar-brand {
+  color:#ffffff;
+}
+
 #footer {
     background: #007b5e !important;
 }
