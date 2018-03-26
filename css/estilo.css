@@ -27,8 +27,10 @@ color:#ffffff;
   color:#ffffff;
 }
 
+/* Footer */ 
+
 #footer {
-    background: #007b5e !important;
+    background: #007b5e;
 }
 #footer h5{
 	padding-left: 10px;
@@ -39,7 +41,7 @@ color:#ffffff;
 }
 #footer a {
     color: #ffffff;
-    text-decoration: none !important;
+    text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
