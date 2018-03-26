@@ -1,4 +1,4 @@
-/* Footer */
+
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
     padding: 60px 0;
@@ -25,6 +25,21 @@ color:#ffffff;
 
 .navbar-default .navbar-brand {
   color:#ffffff;
+}
+
+/* Index Main */ 
+
+.produtosvistos_index{
+	background-color:#007b5e;
+	border:1px solid black;
+	font-size:22px;
+	padding:10px;
+	color:#ffffff;
+	margin-bottom:50px;
+}
+
+.card{
+	margin-bottom:50px;
 }
 
 /* Footer */ 
