@@ -31,7 +31,6 @@ color:#ffffff;
 
 .produtosvistos_index{
 	background-color:#007b5e;
-	border:1px solid black;
 	font-size:22px;
 	padding:10px;
 	color:#ffffff;
@@ -41,6 +40,31 @@ color:#ffffff;
 .card{
 	margin-bottom:50px;
 }
+
+.card-title{
+	font-weight:bold;
+	font-size:18px;
+	margin-top:20px;
+	text-align:center;
+	}
+
+.card-text{
+	margin-top:-10px;
+	padding:20px;
+	font-weight:bold;
+	text-align:center;
+	margin-bottom:10px;
+	font-size:20px;
+}
+
+.card-body .btn{
+	margin-left:25%;
+	width:50%;
+	background-color:#007b5e;
+	color:#ffffff;
+	}
+	
+
 
 /* Footer */ 
 
