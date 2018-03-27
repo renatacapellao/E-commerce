@@ -27,7 +27,16 @@ color:#ffffff;
   color:#ffffff;
 }
 
+.item-active{
+	background-color:#ffffff;
+}
+
 /* Index Main */ 
+
+.carousel-inner{
+	
+	margin-top:-30px;
+}
 
 .produtosvistos_index{
 	background-color:#007b5e;
