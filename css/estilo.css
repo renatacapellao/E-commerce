@@ -10,7 +10,10 @@ section .section-title {
     margin-bottom: 50px;
     text-transform: uppercase;
 }
-body { padding-top: 70px; }
+body { 
+    padding-top: 70px; 
+    background-color: #EBEBEB;
+}
 
 nav {
     color:#ffffff;
