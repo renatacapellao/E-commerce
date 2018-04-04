@@ -89,7 +89,7 @@
 						<div class="caption">
 							<h3>LG G6 H870DS Internacional</h3>
 							<p>Em estoque</p>
-							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+							<p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Ver mais</a></p>
 						</div>
 				</div>
 			</div>
@@ -103,7 +103,7 @@
 						<div class="caption">
 							<h3>LG G6 PLUS H870DSU</h3>
 							<p>Em estoque</p>
-							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+							<p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Ver mais</a></p>
 						</div>
 				</div>
 			</div>
@@ -117,7 +117,7 @@
 						<div class="caption">
 							<h3>PlayStation 4 Pro 1TB Console</h3>
 							<p>Em estoque</p>
-							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+							<p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Ver mais</a></p>
 						</div>
 				</div>
 			</div>
