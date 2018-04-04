@@ -50,9 +50,9 @@
 		
 			<div class="col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="..." alt="..." style="height:200px;">
+					<img src="img/psvr.jpg" alt="..." style="height:200px;">
 						<div class="caption">
-							<h3>Thumbnail label</h3>
+							<h3>Playstation VR Visão 360°</h3>
 							<p>...</p>
 							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
 						</div>
@@ -62,9 +62,9 @@
 		
 			<div class="col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="..." alt="..." style="height:200px;">
+					<img src="img/home.jpg" alt="..." style="height:200px;">
 						<div class="caption">
-							<h3>Thumbnail label</h3>
+							<h3>Home Theater LG DH4130S 5.1</h3>
 							<p>...</p>
 							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
 						</div>
@@ -138,9 +138,9 @@
 			<div class="row">
 			<div class="col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="..." alt="..." style="height:200px;">
+					<img src="img/notebook.jpg" alt="..." style="height:200px;">
 						<div class="caption">
-							<h3>Thumbnail label</h3>
+							<h3>Notebook Acer Core i7  </h3>
 							<p>...</p>
 							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
 						</div>
@@ -152,9 +152,9 @@
 		
 			<div class="col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="..." alt="..." style="height:200px;">
+					<img src="img/Watch.jpg" alt="..." style="height:200px;">
 						<div class="caption">
-							<h3>Thumbnail label</h3>
+							<h3>Fosco Apple Watch 42mm</h3>
 							<p>...</p>
 							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
 						</div>
@@ -166,9 +166,9 @@
 		
 			<div class="col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="..." alt="..." style="height:200px;">
+					<img src="img/kitrazer.jpg" alt="..." style="height:200px;">
 						<div class="caption">
-							<h3>Thumbnail label</h3>
+							<h3>Razer Cyclosa Combo </h3>
 							<p>...</p>
 							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
 						</div>
@@ -178,9 +178,9 @@
 		
 			<div class="col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="..." alt="..." style="height:200px;">
+					<img src="img/tv.jpg" alt="..." style="height:200px;">
 						<div class="caption">
-							<h3>Thumbnail label</h3>
+							<h3>Smart TV LED 58" UHD 4K Samsung</h3>
 							<p>...</p>
 							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
 						</div>
