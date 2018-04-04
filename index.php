@@ -1,238 +1,191 @@
 	<?php require_once("header.php"); ?>
 	
+	<div class="jumbotron">
+		<div class ="container">
+			<img src="img/banner.jpg" style="height:auto; width:100%;">
+		</div>
+	</div>
+	
+	
+	
 <div class ="container">
-		<span class = "produtosvistos_index col-md-12 col-sm-12 col-xs-12" style="margin-bottom:0px;">
+
+
+		
+		
+		<span class = "produtosvistos_index col-md-12 col-sm-12 col-xs-12">
 			Produtos visitados
-</span> 
-
+		</span> 
+		
+		
+		
+		<div class="row" style="margin-top:60px;">
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/lg1.jpg" alt="..." style="height:200px;">
+						<div class="caption">
+							<h3>LG G6 H870DS Dual SIM </h3>
+							<p>Em estoque</p>
+							<p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Ver mais</a></p>
+						</div>
+				</div>
+			</div>
+		
   
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-       <div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="img/MotoG5_5geracao.jpg" alt="Card image cap" style="height:220px; width:100%; padding-top:40px;">
-				<div class="card-body">
-					<h5 class="card-title">Moto G5 Plus (5º geração)</h5>
-					<p class="card-text">R$827,04</p>
-					<a href="#" class="btn btn-primary">Add ao carrinho</a>
-					<a href="produtos/motog5_5ger.html" style="margin-top:30px;" class="btn btn-primary">Ver Mais</a>
+  
+		
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/xboxone.jpg" alt="..." style="height:200px;">
+						<div class="caption">
+							<h3>Console Xbox One X 1TB</h3>
+							<p>Em estoque</p>
+							<p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Ver mais</a></p>
+						</div>
 				</div>
-		</div>
-
-		<div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="img/MotoG_especial.jpg" alt="Card image cap" style="height:220px; width:100%; padding-top:40px;">
-				<div class="card-body">
-					<h5 class="card-title">Moto G5s Plus</h5>
-					<p class="card-text">R$827,96</p>
-					<a href="#" class="btn btn-primary">Add ao carrinho</a>
-					<a href="produtos/motog5.html" style="margin-top:30px;" class="btn btn-primary">Ver Mais</a>
+			</div>
+		
+		
+		
+		
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="..." alt="..." style="height:200px;">
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>...</p>
+							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
 				</div>
-		</div>
-
-		<div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="img/Samsung_galaxy.jpg" alt="Card image cap" style="height:220px; width:100%; padding-top:40px;">
-				<div class="card-body">
-					<h5 class="card-title">Samsung Galaxy S8+ (Plus) </h5>
-					<p class="card-text">R$2.252,34</p>
-					<a href="#" class="btn btn-primary">Add ao carrinho</a>
-					<a href="produtos/samsung_galaxy.html" style="margin-top:30px;" class="btn btn-primary">Ver Mais</a>
+			</div>
+	
+		
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="..." alt="..." style="height:200px;">
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>...</p>
+							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
 				</div>
-		</div>
-
-
-		<div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="img/Nokia_6_TA_1025.jpg" alt="Card image cap" style="height:220px; width:100%; padding-top:40px;">
-				<div class="card-body">
-					<h5 class="card-title">Nokia 6 TA-1025</h5>
-					<p class="card-text">R$758,34</p>
-					<a href="#" class="btn btn-primary">Add ao carrinho</a>
-					<a href="produtos/nokia_1025.html" style="margin-top:30px;" class="btn btn-primary">Ver Mais</a>
-				</div>
-		</div>
-	  </div>
-
-      <div class="item">
-      <div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="img/Huawei_Mate_10.jpg" alt="Card image cap" style="height:220px; width:100%; padding-top:40px;">
-				<div class="card-body">
-					<h5 class="card-title">Huawei Mate 10 Pro</h5>
-					<p class="card-text">R$2.660,89</p>
-					<a href="#" class="btn btn-primary">Add ao carrinho</a>
-					<a href="produtos/huawei_mate_10.html" style="margin-top:30px;" class="btn btn-primary">Ver Mais</a>
-				</div>
-		</div>
-
-		<div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="img/Huawei_Mate_SE.jpg" alt="Card image cap" style="height:220px; width:100%; padding-top:40px;">
-				<div class="card-body">
-					<h5 class="card-title">Huawei Mate SE</h5>
-					<p class="card-text">R$831,50</p>
-					<a href="#" class="btn btn-primary">Add ao carrinho</a>
-					<a href="produtos/huawei_mate_se.html" style="margin-top:30px;" class="btn btn-primary">Ver Mais</a>
-				</div>
-		</div>
-
-		<div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="img/MotoX4_4geracao.jpg" alt="Card image cap" style="height:220px; width:100%; padding-top:40px;">
-				<div class="card-body">
-					<h5 class="card-title">Moto X4(4º geração) </h5>
-					<p class="card-text">R$1.164,15</p>
-					<a href="#" class="btn btn-primary">Add ao carrinho</a>
-					<a href="motog5.html" style="margin-top:30px;" class="btn btn-primary">Ver Mais</a>
-				</div>
+			</div>
 		</div>
 
 
-		<div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="img/Motorola_Moto_E4.jpg" alt="Card image cap" style="height:220px; width:100%; padding-top:40px;">
-				<div class="card-body">
-					<h5 class="card-title">Motorola Moto E4</h5>
-					<p class="card-text">R$598,66</p>
-					<a href="#" class="btn btn-primary">Add ao carrinho</a>
-					<a href="motog5.html" style="margin-top:30px;" class="btn btn-primary">Ver Mais</a>
-				</div>
-		</div>
-      </div>
-    
-      <div class="item">
-       <div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="img/Nubia_N1_Lite.jpg" alt="Card image cap" style="height:220px; width:100%; padding-top:40px;">
-				<div class="card-body">
-					<h5 class="card-title">Nubia N1 Lite</h5>
-					<p class="card-text">R$332,58</p>
-					<a href="#" class="btn btn-primary">Add ao carrinho</a>
-					<a href="motog5.html" style="margin-top:30px;" class="btn btn-primary">Ver Mais</a>
-				</div>
-		</div>
-
-		<div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="img/LG_G6_Plus.jpg" alt="Card image cap" style="height:220px; width:100%; padding-top:40px;">
-				<div class="card-body">
-					<h5 class="card-title">LG G6 Plus</h5>
-					<p class="card-text">R$1.596,39</p>
-					<a href="#" class="btn btn-primary">Add ao carrinho</a>
-					<a href="motog5.html" style="margin-top:30px;" class="btn btn-primary">Ver Mais</a>
-				</div>
-		</div>
-
-		<div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="img/LG_V30.jpg" alt="Card image cap" style="height:220px; width:100%; padding-top:40px;">
-				<div class="card-body">
-					<h5 class="card-title">LG V30</h5>
-					<p class="card-text">R2.162,10 BRL</p>
-					<a href="#" class="btn btn-primary">Add ao carrinho</a>
-					<a href="motog5.html" style="margin-top:30px;" class="btn btn-primary">Ver Mais</a>
-				</div>
-		</div>
 
 
-		<div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="img/ZTE_Blade_V8.jpg" alt="Card image cap" style="height:220px; width:100%; padding-top:40px;">
-				<div class="card-body">
-					<h5 class="card-title">ZTE Blade V8 Pro</h5>
-					<p class="card-text">R$464,09</p>
-					<a href="#" class="btn btn-primary">Add ao carrinho</a>
-					<a href="motog5.html" style="margin-top:30px;" class="btn btn-primary">Ver Mais</a>
-				</div>
-		</div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
+		
 
 
 		<span class = "produtosvistos_index col-md-12 col-sm-12 col-xs-12">
 			Novos Produtos
 </span> 
 		
-		<div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="..." alt="Card image cap" style="height:180px; width:260px;">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
+		<div class="row" style="margin-top:60px;">
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/lg2.jpg" alt="..." style="height:200px;">
+						<div class="caption">
+							<h3>LG G6 H870DS Internacional</h3>
+							<p>Em estoque</p>
+							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
 				</div>
-		</div>
-
-		<div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="..." alt="Card image cap" style="height:180px; width:260px;">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		
+  
+  
+		
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/lg3.jpg" alt="..." style="height:200px;">
+						<div class="caption">
+							<h3>LG G6 PLUS H870DSU</h3>
+							<p>Em estoque</p>
+							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
 				</div>
-		</div>
-
-		<div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="..." alt="Card image cap" style="height:180px; width:260px;">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		
+		
+		
+		
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/ps4.jpg" alt="..." style="height:200px;">
+						<div class="caption">
+							<h3>PlayStation 4 Pro 1TB Console</h3>
+							<p>Em estoque</p>
+							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
 				</div>
-		</div>
-
-		<div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="..." alt="Card image cap" style="height:180px; width:260px;">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+	
+		
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="img/nitendo.jpg" alt="..." style="height:200px;">
+						<div class="caption">
+							<h3>Nintendo Switch com Neon Blue</h3>
+							<p>Em estoque</p>
+							<p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Ver mais</a></p>
+						</div>
 				</div>
-		</div>
-
-		<div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="..." alt="Card image cap" style="height:180px; width:260px;">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
-				</div>
-		</div>
-
-		<div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="..." alt="Card image cap" style="height:180px; width:260px;">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
-				</div>
+			</div>
 		</div>
 		
-		<div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="..." alt="Card image cap" style="height:180px; width:260px;">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
+			<div class="row">
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="..." alt="..." style="height:200px;">
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>...</p>
+							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
 				</div>
-		</div>
+			</div>
 		
-		<div class="card col-md-3 col-sm-6">
-			<img class="card-img-top" src="..." alt="Card image cap" style="height:180px; width:260px;">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
+  
+  
+		
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="..." alt="..." style="height:200px;">
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>...</p>
+							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
 				</div>
+			</div>
+		
+		
+		
+		
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="..." alt="..." style="height:200px;">
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>...</p>
+							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
+				</div>
+			</div>
+	
+		
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<img src="..." alt="..." style="height:200px;">
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>...</p>
+							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
+				</div>
+			</div>
 		</div>
 		
 	</div>

@@ -36,9 +36,8 @@ color:#ffffff;
 
 /* Index Main */ 
 
-.carousel-inner{
-	
-	margin-top:-30px;
+.caption h3{
+	text-align:center;
 }
 
 .produtosvistos_index{
