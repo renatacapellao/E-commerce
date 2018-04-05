@@ -66,7 +66,7 @@
 						<div class="caption">
 							<h3>Home Theater LG DH4130S 5.1</h3>
 							<p>Em estoque</p>
-							<p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Ver mais</a></p>
+							<p><a href="#" class="btn btn-primary" role="button">Compra</a> <a href="#" class="btn btn-default" role="button">Ver mais</a></p>
 						</div>
 				</div>
 			</div>
