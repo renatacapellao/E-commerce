@@ -2,10 +2,11 @@
 	
   <?php 
 
-    $titulo = NULL;
+    $nome = NULL;
     $descricao = NULL;
     $preco = NULL;
     $imagem = NULL;
+	$categoria = NULL;
 
     if(!isset($_GET["id"])) {
       echo "<script>document.location.href = '../index.php' </script>";
@@ -17,10 +18,10 @@
         $q = mysqli_query($cn, "SELECT * FROM tbl_cliente WHERE cod_cliente = $id");
 
         if($r = mysqli_fetch_assoc($q)) {
-          $titulo = $r["nome_cliente"];
-          $descricao = $r["endereco"];
-          $preco = $r["cep"];
-          $imagem = $r["cidade"];
+          $nome = $r["nome"];
+          $descricao = $r["descricao"];
+          $preco = $r["preco"];
+          $imagem = $r["imagem"];
         } else {
           echo "<script>document.location.href = '../index.php;' </script>";
         }
