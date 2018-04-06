@@ -10,14 +10,12 @@
 	$uso = NULL; 
 	
 
-    if(!isset($_GET["id"])) {
-      echo "<script>document.location.href = '../index.php' </script>";
-    } else {
+   
         $cn = mysqli_connect("localhost", "root", "", "e-comerce");
 
         $id = mysqli_real_escape_string($cn, $_GET["id"]);
 
-        $q = mysqli_query($cn, "SELECT * FROM tbl_cliente WHERE cod_cliente = $id");
+        $q = mysqli_query($cn, "SELECT * FROM PRODUTO");
 
         if($r = mysqli_fetch_assoc($q)) {
           $nome = $r["NOME"];
@@ -26,7 +24,7 @@
           $imagem = $r["IMAGEM"];
 		  $categoria = $r["CATEGORIA"];
         } else {
-          echo "<script>document.location.href = '../index.php;' </script>";
+          echo "<script>document.location.href = 'index.php;' </script>";
         }
     }
 
