@@ -43,11 +43,11 @@
             		<li class="dropdown">
               			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produtos<span class="caret"></span></a>
               			<ul class="dropdown-menu">
-			                <li><a href="#">Categorias</a></li>
-			                <li><a href="#">Marcas</a></li>
+			                <li><a href="#">Celulares</a></li>
+			                <li><a href="#">Video Games</a></li>
 			                <li role="separator" class="divider"></li>
-              				<li><a href="#">Destaques</a></li>
-              				<li><a href="#">Promoções</a></li>
+              				<li><a href="#">Televisão</a></li>
+              				<li><a href="#">Outros</a></li>
               			</ul>
             		</li>
           		</ul>
