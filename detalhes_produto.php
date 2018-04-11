@@ -7,23 +7,26 @@
     $preco = NULL;
     $imagem = NULL;
 	$categoria = NULL;
+	$uso = NULL;
 
-    if(!isset($_GET["id"])) {
-      echo "<script>document.location.href = '../index.php' </script>";
+    if(!isset($_GET["ID_PRODUTO"])) {
+      echo "<script>document.location.href = 'index.php' </script>";
     } else {
-        $cn = mysqli_connect("localhost", "root", "", "test");
+        $cn = mysqli_connect("localhost", "root", "", "e-comerce");
 
-        $id = mysqli_real_escape_string($cn, $_GET["id"]);
+        $id = mysqli_real_escape_string($cn, $_GET["ID_PRODUTO"]);
 
-        $q = mysqli_query($cn, "SELECT * FROM tbl_cliente WHERE cod_cliente = $id");
+        $q = mysqli_query($cn, "SELECT * FROM PRODUTO WHERE ID_PRODUTO = $id");
 
         if($r = mysqli_fetch_assoc($q)) {
-          $nome = $r["nome"];
-          $descricao = $r["descricao"];
-          $preco = $r["preco"];
-          $imagem = $r["imagem"];
+          $nome = $r["NOME"];
+          $descricao = $r["DESCRICAO"];
+          $preco = $r["PRECO"];
+          $imagem = $r["IMAGEM"];
+		  $categoria = $r["CATEGORIA"];
+		  $uso = $r["USO"];
         } else {
-          echo "<script>document.location.href = '../index.php;' </script>";
+          echo "<script>document.location.href = 'index.php;' </script>";
         }
     }
 
