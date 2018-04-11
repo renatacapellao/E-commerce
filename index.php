@@ -36,15 +36,13 @@
 			Produtos visitados
 		</span> 
 		<div class="row">
-		<?php while($r = mysqli_fetch_assoc($q)) { ?>
-		
-		
+		<?php while($r = mysqli_fetch_assoc($s)) { ?>
 			<div class="col-sm-6 col-md-3">
 				<div class="thumbnail">
 					<img src="img/<?=$r["IMAGEM"]?>" style="height:200px;">
 						<div class="caption">
 							<h3><?=$r["NOME"]?></h3>
-							<p><a href="detalhes_produto.php?id=<?=$r["id"]?>" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Ver mais</a></p>
+							<p><a href="detalhes_produto.php?id=<?=$r["ID_PRODUTO"]?>" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Ver mais</a></p>
 					</div>
 			</div>
 		</div>
@@ -60,14 +58,14 @@
 		</span> 
 		<div class="row">
 		
-		<?php while($r = mysqli_fetch_assoc($s)) { ?>
+		<?php while($r = mysqli_fetch_assoc($q)) { ?>
 		
 			<div class="col-sm-6 col-md-3">
 				<div class="thumbnail">
 					<img src="img/<?=$r["IMAGEM"]?>" style="height:200px;">
 						<div class="caption">
 							<h3><?=$r["NOME"]?></h3>
-							<p><a href="detalhes_produto.php?id=<?=$r["id"]?>" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Ver mais</a></p>
+							<p><a href="detalhes_produto.php?id=<?=$r["ID_PRODUTO"]?>" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Ver mais</a></p>
 					</div>
 			</div>
 		</div>
