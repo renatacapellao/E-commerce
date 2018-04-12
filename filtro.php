@@ -1,28 +1,24 @@
 <?php require_once("header.php"); ?>
 
 
-<?php 
-	    if(!isset($_GET["id"])) {
-      echo "<script>document.location.href = '../index.php' </script>";
-    } else {
-        $cn = mysqli_connect("localhost", "root", "", "test");
+	  <?php 
 
-        $id = mysqli_real_escape_string($cn, $_GET["id"]);
+    $nome = NULL;
+    $descricao = NULL;
+    $preco = NULL;
+    $imagem = NULL;
+	$categoria = NULL;
+	$uso = NULL; 
+	
 
-        $q = mysqli_query($cn, "SELECT * FROM tbl_cliente WHERE cod_cliente = $id");
+   
+        $cn = mysqli_connect("localhost", "root", "", "e-comerce");
 
-        if($r = mysqli_fetch_assoc($q)) {
-          $titulo = $r["nome_cliente"];
-          $descricao = $r["endereco"];
-          $preco = $r["cep"];
-          $imagem = $r["cidade"];
-        } else {
-          echo "<script>document.location.href = '../index.php;' </script>";
-        }
-    }
+        $q = mysqli_query($cn, "SELECT * FROM PRODUTO WHERE USO = 'novo'");
+		
+		$s = mysqli_query($cn, "SELECT * FROM PRODUTO WHERE USO = 'normal'");
 
-
-?>
+  ?>
 
 	<div class = "container"> 
 		<div class = "row"> 
