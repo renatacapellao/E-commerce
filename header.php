@@ -39,7 +39,7 @@
         	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           		<ul class="nav navbar-nav">
             		<li><a href="sobre.php">Sobre</a></li>
-              		<li><a href="#">Fale conosco</a></li>
+              		<li><a href="FaleConosco.php">Fale conosco</a></li>
             		<li class="dropdown">
               			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produtos<span class="caret"></span></a>
               			<ul class="dropdown-menu">
@@ -64,7 +64,7 @@
             		<li class="dropdown">
               			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i><span class="caret"></span></a>
               			<ul class="dropdown-menu">
-                			<li><a href="#">Minha conta</a></li>
+                			<li><a href="Login .php">Minha conta</a></li>
 			                <li><a href="#">Histórico</a></li>
 			                <li><a href="#">Meus pedidos</a></li>
 			                <li role="separator" class="divider"></li>
