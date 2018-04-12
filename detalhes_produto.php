@@ -38,7 +38,7 @@
 		<div class = "col-md-4 col-sm-4 col-xs-12 produtodesc_img">
 			<img src="img/<?=$imagem; ?>" style="height:220px;width:100%;margin-top:80px;margin-bottom:40px;">
 			<h3 style="text-align:center;font-weight:normal;"><?=$preco?></h3>
-			<a href="#" class="btn btn-primary" style="margin-left:25%;width:50%;">Add ao carrinho</a>
+			<a href="carrinho.php?id=<?=$r["ID_PRODUTO"]?>" class="btn btn-primary" style="margin-left:25%;width:50%;">Add ao carrinho</a>
 		</div>
 		
 		<div class = "col-md-6 col-sm-6 col-xs-12 produtodesc_texto">

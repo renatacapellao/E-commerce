@@ -66,9 +66,9 @@
 						<div class="caption">
 							<h3><?=$r["NOME"]?></h3>
 							<p><a href="detalhes_produto.php?id=<?=$r["ID_PRODUTO"]?>" class="btn btn-primary" role="button">Comprar</a> <a href="detalhes_produto.php?id=<?=$r["ID_PRODUTO"]?>" class="btn btn-default" role="button">Ver mais</a></p>
-					</div>
+						</div>
+				</div>
 			</div>
-		</div>
 		
 		<?php } ?>
 		</div>
