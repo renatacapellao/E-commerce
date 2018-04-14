@@ -1,3 +1,5 @@
+<?php require_once("header.php"); ?>
+
 <?php
 $cn = mysqli_connect("localhost", "root", "", "e-comerce");
 
@@ -11,6 +13,14 @@ if (empty($busca_query)) { //Se nao achar nada, lança essa mensagem
 
 // quando existir algo em '$busca_query' ele realizará o script abaixo.
 while ($dados = mysqli_fetch_array($busca_query)) {
-    echo "Nome do Produto: $dados[NOME]<br />";
+	echo "	<a href='detalhes_produto.php?id=$dados[ID_PRODUTO]'>";
+	echo"<div class = 'row' > 
+				<img src ='img/$dados[IMAGEM]' style='margin-left:35%;margin-right:35%;width:30%;'><br />";
+
+				echo "<h3 style='text-align:center'>$dados[NOME]</h3><br />
+	</div></a>";
+
 }
 ?>
+
+<?php require_once("footer.php"); ?>
