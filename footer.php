@@ -16,7 +16,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
 					<p></p>
-					<p class="h6">&copy Todos os direitos reservados.<a class="text-green ml-2" href="#" target="_blank">Nome da empresa</a></p>
+					<p class="h6">&copy Todos os direitos reservados.<a class="text-green ml-2" href="#" target="_blank">E-commerce Eletrônicos</a></p>
 				</div>
 				</hr>
 			</div>
