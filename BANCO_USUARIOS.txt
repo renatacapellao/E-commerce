@@ -1,0 +1,20 @@
+SCHEMA = e-comerce
+
+
+
+ CREATE TABLE usuarios (
+ id			INT NOT NULL AUTO_INCREMENT,
+ nome			VARCHAR(80) NOT NULL,
+ email			VARCHAR(100) NOT NULL,
+ cpf			VARCHAR(11) NOT NULL,
+ datanascimento		VARCHAR(10) NOT NULL,
+ sexo 			VARCHAR(9) NOT NULL,
+ cep			VARCHAR(9) NOT NULL,
+ endereco		VARCHAR(100) NOT NULL,
+ bairro 		VARCHAR(15) NOT NULL,
+ cidade 		VARCHAR(30) NOT NULL,
+ uf      		VARCHAR(2) NOT NULL,
+ telefone		VARCHAR(13) NOT NULL,
+ celular		VARCHAR(14) NOT NULL,
+ senha			VARCHAR(200) NOT NULL,
+ PRIMARY KEY(id) );
