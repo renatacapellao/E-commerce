@@ -51,14 +51,15 @@
               			</ul>
             		</li>
           		</ul>
-          		<form class="navbar-form navbar-left">
+          		<form class="navbar-form navbar-left" action="busca.php" method="post">
             		<div class="form-group">
-              			<input type="text" class="form-control" placeholder="Search">
+              			<input type="text" class="form-control" placeholder="Search" name="palavra">
             		</div>
-            		<button type="button" class="btn btn-default">
-      					<span class="glyphicon glyphicon-search"></span>
-    				</button>
+            		<input type="submit" Value="Buscar" />
           		</form>
+				
+				
+				
           		<ul class="nav navbar-nav navbar-right">
             		<li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
             		<li class="dropdown">
