@@ -6,7 +6,7 @@ $email = $_POST['email'];
 $password = MD5($_POST['senha']);
 //echo "SELECT * FROM usuarios WHERE email = '$email' and senha = '$password' LIMIT 1";
 $login = mysqli_query($conn, "SELECT * FROM usuarios WHERE email = '$email' and senha = '$password' LIMIT 1");
-$logando = mysqli_query($conn, "UPDATE usuarios SET STATUS = 'ATIVO' WHERE email = '$email'" );
+$status = mysqli_query($conn, "UPDATE usuarios SET STATUS = 'ATIVO' WHERE email = '$email'" );
 
 if($r = mysqli_fetch_assoc($login)){
 	$_SESSION['iduser'] = $r['id'];
