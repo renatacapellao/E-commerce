@@ -13,14 +13,16 @@ if (empty($busca_query)) { //Se nao achar nada, lança essa mensagem
 
 // quando existir algo em '$busca_query' ele realizará o script abaixo.
 while ($dados = mysqli_fetch_array($busca_query)) {
-	echo "	<a href='detalhes_produto.php?id=$dados[ID_PRODUTO]'>";
+	echo "	<a href='detalhes_produto.php?id=$dados[ID_PRODUTO]' style='text-decoration:none;color:black;'>";
 	echo"<div class = 'row' > 
-				<img src ='img/$dados[IMAGEM]' style='margin-left:35%;margin-right:35%;width:30%;'><br />";
+				<img src ='img/$dados[IMAGEM]' style='margin-left:35%;margin-right:35%;width:30%;margin-top:30px;'><br />";
 
-				echo "<h3 style='text-align:center'>$dados[NOME]</h3><br />
+				echo "<h4 style='text-align:center;margin-bottom:50px;'>$dados[NOME]</h4><br />
 	</div></a>";
 
 }
+
 ?>
+
 
 <?php require_once("footer.php"); ?>
