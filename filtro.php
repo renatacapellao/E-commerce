@@ -10,27 +10,29 @@
 	$categoria = NULL;
 	$uso = NULL; 
 	
-
+		  if(!isset($_GET["id"])) {
+			echo "<script>document.location.href = 'index.php' </script>";
+			} else {
    
         $cn = mysqli_connect("localhost", "root", "", "e-comerce");
-
-        $q = mysqli_query($cn, "SELECT * FROM PRODUTO WHERE USO = 'novo'");
 		
-		$s = mysqli_query($cn, "SELECT * FROM PRODUTO WHERE USO = 'normal'");
+		$id = mysqli_real_escape_string($cn, $_GET["id"]);
+
+        $busca_categoria = mysqli_query($cn, "SELECT * FROM PRODUTO WHERE ID_CATEGORIA = $id");
+		
+		
+    }
+		while ($r = mysqli_fetch_array($busca_categoria)) {
+			echo "	<a href='detalhes_produto.php?id=$r[ID_PRODUTO]' style='text-decoration:none;color:black;'>";
+			echo"<div class = 'row' > 
+				<img src ='img/$r[IMAGEM]' style='margin-left:35%;margin-right:35%;width:30%;margin-top:30px;'><br />";
+
+				echo "<h4 style='text-align:center;margin-bottom:50px;'>$r[NOME]</h4><br />
+	</div></a>";
+
+	}
 
   ?>
-
-	<div class = "container"> 
-		<div class = "row"> 
-			<div class = "col-md-4 col-sm-4 col-xs-12">
-				<img src="img/<?=$imagem; ?>" style="height:220px;width:100%;margin-top:80px;margin-bottom:40px;"> 
-			</div>
-			
-			<div class = "col-md-8 col-sm-8 col-xs-12">
-				<h1> </h1> 
-			</div>
-		</div> 
-	</div>
 
 
 
