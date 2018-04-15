@@ -65,7 +65,7 @@
             		<li class="dropdown">
               			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i><span class="caret"></span></a>
               			<ul class="dropdown-menu">
-                			<li><a href="Login .php">Minha conta</a></li>
+                			<li><a href="login.php">Minha conta</a></li>
 			                <li><a href="#">Histórico</a></li>
 			                <li><a href="#">Meus pedidos</a></li>
 			                <li role="separator" class="divider"></li>
