@@ -1,87 +1,48 @@
 <?php require_once("header.php"); ?>
-
-<?php 
-
-    $nome = NULL;
-    $descricao = NULL;
-    $preco = NULL;
-    $imagem = NULL;
-	$categoria = NULL;
-	$uso = NULL;
-
-    if(!isset($_GET["id"])) {
-      echo "<script>document.location.href = 'index.php' </script>";
-    } else {
-        $cn = mysqli_connect("localhost", "root", "", "e-comerce");
-
-        $id = mysqli_real_escape_string($cn, $_GET["id"]);
-
-        $q = mysqli_query($cn, "SELECT * FROM PRODUTO WHERE ID_PRODUTO = $id");
-
-        if($r = mysqli_fetch_assoc($q)) {
-          $nome = $r["NOME"];
-          $descricao = $r["DESCRICAO"];
-          $preco = $r["PRECO"];
-          $imagem = $r["IMAGEM"];
-		  $uso = $r["USO"];
-        } else {
-          echo "<script>document.location.href = 'index.php;' </script>";
-        }
-    }
-
-    
-
-  ?>
-  
-  
-		
-	<div class="container">
-		<div class = "row" style="margin-bottom:50px;">
-			<div class = "col-md-12 col-sm-12 col-xs-12">
-				<h1 style="text-align:center; font-weight:normal;">Minhas compras</h1>
-			</div>
-		</div>
+<?php
 	
-		<div class = "row">
-			<div class="col-sm-2 col-md-2 col-xs-2">
-				<h4>Código produto</h4>
-			</div>
-			
-			<div class="col-sm-6 col-md-6 col-xs-6">
-				<h4>Nome do produto</h4>
-			</div>
-			
-			<div class="col-sm-4 col-md-4 col-xs-4">
-				<h4>Preço</h4>
-			</div>
-		</div>
+	session_start();
 	
-		<div class = "row">
-			<div class="col-sm-2 col-md-2 col-xs-2">
-				<h4><?=$id; ?></h4>
-			</div>
-			
-			<div class="col-sm-6 col-md-6 col-xs-6">
-				<h4><?=$nome; ?></h4>
-			</div>
-			
-			<div class="col-sm-4 col-md-4 col-xs-4">
-				<h4><?=$preco; ?></h4>
-			</div>
-		</div>
-		
-		
-		<?php 
-			$un = $un + 1;
-			
-			$compra =array('$id','$nome','$preco'); 
-		
-		
-		?>
-		<a>Continuar comprando </a>
-	</div>
-	
-	
-	
-	
+	if(!isset($_SESSION['carrinho'])){
+		$_SESSION['carrinho'] = array();
+	}
+
+	if(isset($_GET['acao'])){
+
+		if($_GET['acao'] == 'add'){
+			$id = intval($_GET['id']);
+			if(!isset($_SESSION['carrinho'] [$id])){
+				$_SESSION['carrinho'][$id] = 1;
+			}
+			else{
+				$_SESSION['carrinho'][$id] += 1;
+			}
+	}
+}
+
+	if(count($_SESSION['carrinho']) == 0){
+		echo '<tr><td colspan = "5">Não há produto no carrinho</tr></td>';
+	} else {
+		require("config.php");
+		foreach($_SESSION['carrinho'] as $id => $qtd){
+			$sql = "SELECT * FROM PRODUTO WHERE ID_PRODUTO = '$id";
+			$qr = mysql_query($sql);
+			$ln = mysql_fetch_assoc($qr);
+
+			$nome = $ln['NOME'];
+			$preco = number_format($ln['PRECO'],2,',','.');
+			$sub = number_format($ln['PRECO'] * $qtd,2,',','.');
+
+			echo '<tr>
+				<td>'.$nome.'</td>
+				<td>&nbsp;</td>
+				<td>'.$preco.'</td>
+				<td>'.$sub.'</td>
+				<td><a href ="?acao=del&id='.$id.'">Remover</a></td>
+			</tr>
+			';
+
+		}
+	}
+?>	
 <?php require_once("footer.php"); ?>
