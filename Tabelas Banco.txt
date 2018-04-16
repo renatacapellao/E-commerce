@@ -49,7 +49,7 @@ CREATE  TABLE  PRODUTO (
 ID_PRODUTO INT PRIMARY KEY,
 NOME VARCHAR (500) NOT NULL,
 DESCRICAO TEXT,
-PRECO VARCHAR (12) NOT NULL,
+PRECO DECIMAL (10,2) NOT NULL,
 IMAGEM VARCHAR (50) NOT NULL,
 USO varchar (99) 
 
@@ -62,7 +62,7 @@ INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (1,"LG G
 <li>Non-removable Li-Po 3300mAh battery
 Android 7.0 (Nougat)</li>
 <li>Unlocked cell phones are compatible with GSM carrier such as AT&T and T-Mobile, but are not compatible with CDMA carriers such as Verizon and Sprint</li>
-<li>Factory Unlocked International Version, has no warranty in the US)</li></ul>","R$449,99","lg1.jpg","novo");
+<li>Factory Unlocked International Version, has no warranty in the US)</li></ul>","449.99","lg1.jpg","novo");
 
 INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (2,"LG G6 Gold H870DS Dual SIM  ","<ul><li>Snapdragon 821 MSM8996AC; Quad-Core (2.35 GHz Dual + 1.6 GHz Dual)</li>
 <li>Dual-LED flash 13 MP + 13 MP rear camera, 5 MP front câmera</li>
@@ -71,7 +71,7 @@ INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (2,"LG G
 <li>Non-removable Li-Po 3300mAh battery
 Android 7.0 (Nougat)</li>
 <li>Unlocked cell phones are compatible with GSM carrier such as AT&T and T-Mobile, but are not compatible with CDMA carriers such as Verizon and Sprint</li>
-<li>Factory Unlocked International Version, has no warranty in the US)</li></ul>","R$459,99","lg2.jpg","novo");
+<li>Factory Unlocked International Version, has no warranty in the US)</li></ul>","459.99","lg2.jpg","novo");
 
 INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (3,"LG G6 PLUS H870DSU ","<ul><li>Qualcomm MSM8996 Snapdragon 821; Quad-Core (Dual-Core 2.35 GHz Kryo & Dual-Core 1.6 GHz Kryo)</li>
 <li>Megapixel 13 MP + 13 MP rear camera, 5 MP front câmera</li>
@@ -80,7 +80,7 @@ INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (3,"LG G
 <li>Non-removable Li-Po 3300 mAh battery
 Android 7.0 (Nougat)</li>
 <li>Supports only GSM carriers (AT&T, T-Mobile), and does not support CDMA (like Sprint, Verizon, etc.)</li>
-<li>Factory Unlocked International Version, has no warranty in the US</li></ul>","R$489,99","lg3.jpg","novo");
+<li>Factory Unlocked International Version, has no warranty in the US</li></ul>","489.99","lg3.jpg","novo");
 
 INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (4,"LG G5 RS988 32GB Titan ","<ul><li>2.15 GHz Snapdragon 820 Quad-Core CPU
 32GB Storage Capacity + 4GB of RAM
@@ -88,7 +88,7 @@ INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (4,"LG G
 <li>Supports microSDXC Cards u to 256GB
 Android 6.0 Marshmallow</li>
 <li>Dual Rear Cameras: 16 MP + 8 MP
-GSM + CDMA / 4G LTE Capable</li></ul>","R$489,99","lg3.jpg","novo");
+GSM + CDMA / 4G LTE Capable</li></ul>","489.99","lg3.jpg","novo");
 
 INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (5,"Xbox One X Console ","
 
@@ -96,14 +96,14 @@ INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (5,"Xbox
     <li>Games play better on Xbox One X.</li><li> 6 teraflops of graphical processing power and a 4K Blu-ray player provides more immersive gaming and entertainment</li>
     <li>Play with the greatest community of gamers on the most advanced multiplayer network</li>
     <li>“The Xbox One X is a beast of a machine and worth every penny”- Xbox Achievement
-    “…the smoothest, most immersive console gaming experience possible.” – Daily Star (UK)</li></ul> ","R$479,99","xboxone.jpg","normal");
+    “…the smoothest, most immersive console gaming experience possible.” – Daily Star (UK)</li></ul> ","479.99","xboxone.jpg","normal");
 
 INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (6,"PlayStation 4 Pro Console","
 
     <ul><li>Spectacular graphics</li> <li> Explore vivid game worlds with rich visuals heightened by PS4 Pro</li>
     <li>Enhanced gameplay</li> <li> Support for faster frame rates delivers super-sharp action for select PS4 games</li>
     <li>One unified gaming community</li> - <li>Compatible with every PS4 game</li>
-    <li>Extraordinary entertainment - With up to 4K streaming and 4K auto-upscaling for video contente</li></ul>","R$479,99","ps4.jpg","normal");
+    <li>Extraordinary entertainment - With up to 4K streaming and 4K auto-upscaling for video contente</li></ul>","479.99","ps4.jpg","normal");
 
 
 
@@ -115,7 +115,7 @@ INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (7,"Nint
 </ul>
 
 
-","R$419,99","nintendo.jpg","normal");
+","419.99","nitendo.jpg","normal");
 
 INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (8,"PlayStation VR - PlayStation 4","
 
@@ -124,9 +124,9 @@ INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (8,"Play
     <li>Just Plug and Play</li> <li> Getting into PlayStation VR couldn't be easier. Just plug the PlayStation VR headset and your PlayStation Camera into your PlayStation 4 system. Sold separately.</li>
     <li>Advanced VR Display</li>  <li>Seamless visuals keep you connected to the virtual world through an expansive 5.7 OLED 1080p display running at up to 120 frames per second.</li>
     <li>3D Audio Technology</li>  <li>3D Audio with PlayStation VR means that youll be able to pinpoint sounds above, below, and all around you.</li>
-    <li>*PlayStation 4 and Camera sold separately.</li></ul>
+    <li>*PlayStation 4 and Camera sold separately.</li></ul>"
     
-    ,"R$249,99","psvr.jpg","normal");
+    ,"249.99","psvr.jpg","normal");
 
 INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (9,"Jateado Fosco Apple Watch 42mm ","
    <ul><li>Aluminum Chassis with Ion-X Glass
@@ -141,7 +141,7 @@ INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (9,"Jate
 
 ."
     
-    ,"R$289,99","watch.jpg","normal");
+    ,"289.99","watch.jpg","normal");
 
 INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (10,"kit Games Razer Cyclosa Combo","<ul><li>Teclado programável</li><li>Teclas que podem ser usadas para macros</li>
 
@@ -149,7 +149,7 @@ INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (10,"kit
 <li>Conforto totalO mouse tem acabamento emborrachado</li>
 
 <li>Você precisa de conforto e justamente por isso o mouse tem um acabamento ergonômico e emborrachado para que você não canse tanto a mão enquanto está se divertindo ou trabalhando em seu computador.</li></ul> 
-.","R$229,99","kitrazer.jpg","normal");  
+.","229.99","kitrazer.jpg","normal");  
   
 INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (11,"Notebook Acer com Placa NVIDIA","<ul><li>Intel® Core i7-7500U 2.7 GHz </li><li> 3.5 GHz com função Turbo Boost 4 MB Cache </li>
 <li>Windows Windows 10 Home
@@ -165,14 +165,14 @@ USB Type-C port: USB 3.1 Gen 1</li>
 <li>1 entrada para fonte carregadora de bateria</li>
 <li>1 porta no padrão combo para microfone / fone de ouvido
 </li>
-<li>Dimensões do Produto: 381.6 x 259 x 23/28.45 mm.</li></ul>","R$1.929,99","notebook.jpg","normal");
+<li>Dimensões do Produto: 381.6 x 259 x 23/28.45 mm.</li></ul>","1929.99","notebook.jpg","normal");
    
  INSERT INTO PRODUTO (ID_PRODUTO,NOME,DESCRICAO,PRECO,IMAGEM,USO) VALUES (12,"Smart TV LED 58","<ul><li>Samsung: Smart TV LED 58 UHD 4K Samsung MU6120 com HDR Premium</li><li> Plataforma Smart Tizen</li> <li>Smart View </li><li>Espelhamento de Tela</li> <li>Steam Link</li> <li>3 HDMI e 2 USB.</li></ul>"
     
-,"R$3.629,99","tv.jpg","normal");
+,"3629.99","tv.jpg","normal");
 
 ALTER TABLE PRODUTO ADD ID_CATEGORIA INT (99) NOT NULL;
-ALTER TABLE PRODUTO ADD QUANTIDADE INT (500) NOT NULL;
+ALTER TABLE PRODUTO ADD QUANTIDADE INT (255) NOT NULL;
 
 UPDATE PRODUTO SET ID_CATEGORIA =1 WHERE ID_PRODUTO = 1;
 UPDATE PRODUTO SET ID_CATEGORIA =1 WHERE ID_PRODUTO = 2;
