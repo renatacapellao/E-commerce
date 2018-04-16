@@ -3,15 +3,11 @@
 <?php
 $cn = mysqli_connect("localhost", "root", "", "e-comerce");
 
-$busca = $_POST['palavra'];// palavra que o usuario digitou
+$busca = $_POST['palavra'];
 
-$busca_query = mysqli_query($cn,"SELECT * FROM PRODUTO WHERE NOME OR IMAGEM OR DESCRICAO LIKE '%$busca%'");//faz a busca com as palavras enviadas
+$busca_query = mysqli_query($cn,"SELECT * FROM PRODUTO WHERE NOME OR IMAGEM OR DESCRICAO LIKE '%$busca%'");
 
-if (empty($busca_query)) { //Se nao achar nada, lança essa mensagem
-    echo "Nenhum registro encontrado.";
-}
 
-// quando existir algo em '$busca_query' ele realizará o script abaixo.
 while ($dados = mysqli_fetch_array($busca_query)) {
 	echo "	<a href='detalhes_produto.php?id=$dados[ID_PRODUTO]' style='text-decoration:none;color:black;'>";
 	echo"<div class = 'row' > 
