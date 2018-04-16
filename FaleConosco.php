@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         
-        <form class="form-horizontal" id="frmcontatoazul" name="formContato" action="envia.php">
+        <form class="form-horizontal" id="frmcontatoazul" name="formContato" action="envia.php" method="POST">
         <fieldset>
         
         <!-- Form Name -->
