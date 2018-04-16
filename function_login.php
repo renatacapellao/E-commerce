@@ -9,12 +9,13 @@ $login = mysqli_query($conn, "SELECT * FROM usuarios WHERE email = '$email' and 
 $status = mysqli_query($conn, "UPDATE usuarios SET STATUS = 'ATIVO' WHERE email = '$email'" );
 
 if($r = mysqli_fetch_assoc($login)){
+	session_start();
 	$_SESSION['iduser'] = $r['id'];
 	$_SESSION['nameuser'] = $r['nome'];
-	header("Location: index.php");
+	header("Location: minhaconta.php");
 	
 }else{
-	echo '<script> alert("E-MAIL ou SENHA inválidos"); </script>';
+	echo '<script> alert("E-MAIL ou SENHA inválidos"); document.location.href="login.php";</script>';
 	//header("Location: login.php");
 
 	}

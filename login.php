@@ -15,7 +15,7 @@ if(document.login.senha.value=='')
 	document.getElementById('senha').focus();
 	return false;
 }
-else{
+else
 	return true;
 	
 }
