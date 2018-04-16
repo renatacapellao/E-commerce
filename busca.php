@@ -1,11 +1,15 @@
 <?php require_once("header.php"); ?>
 
 <?php
-$cn = mysqli_connect("localhost", "root", "", "e-comerce");
+include_once("config.php");
 
-$busca = $_POST['palavra'];
+$busca =trim($_POST['palavra']);
 
-$busca_query = mysqli_query($cn,"SELECT * FROM PRODUTO WHERE NOME OR IMAGEM OR DESCRICAO LIKE '%$busca%'");
+$sql="SELECT * FROM PRODUTO WHERE NOME LIKE '%$busca%'||  DESCRICAO LIKE '%$busca%' || IMAGEM LIKE '%$busca%'";
+    
+ //   "SELECT * FROM PRODUTO WHERE NOME OR IMAGEM OR DESCRICAO LIKE '%$busca%'";
+
+$busca_query = mysqli_query($conn,$sql);
 
 
 while ($dados = mysqli_fetch_array($busca_query)) {
