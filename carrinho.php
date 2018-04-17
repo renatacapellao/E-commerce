@@ -1,4 +1,6 @@
 <?php require_once("header.php"); ?>
+		<div class = "container">
+		<div class="row" style="margin-left:30%;margin-bottom:40px;margin-top:20px;"><h2>Carrinho de compra</h2></div>
 <?php
 	
 	session_start();
@@ -25,6 +27,8 @@
 				unset($_SESSION['carrinho'][$id]);
 			}
 	}
+	
+	
 }
 
 
@@ -44,18 +48,40 @@
 			$sub = number_format($ln['PRECO'] * $qtd,2,',','.');
                 
             ?>
+		
+			
+				<div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-2">Produto</div>
+                 <div class="col-md-2 col-sm-2 col-xs-2">Preço Unidade</div>
+                 <div class="col-md-2 col-sm-2 col-xs-2">Preço Total</div>
+                 <div class="col-md-2 col-sm-2 col-xs-2">SubTotal</div>
+                 <div class="col-md-2 col-sm-2 col-xs-2">Remover</div>
+                
+				</div>
 
-        <table>Carrinho de compra
-            <tr>
-                <th width="144">Produto</th>
-                <th width="79">Preço Unid</th>
-                <th width="89">Preço Total</th>
-                <th width="100">SubTotal</th>
-                <th width="64">Remover</th>
-            </tr>
-        </table>
+      
 
-        <form action="" method="post"></form>
+        <?php
+            echo ' 
+           <div class="row" style="margin-top:20px;">
+				<div class="col-md-2 col-sm-2 col-xs-2" >'.$nome.'</div>
+				<div class="col-md-2 col-sm-2 col-xs-2"><input type = "text" size="3" name="prod['.$id.']" value="'.$qtd.'"/> </div>
+				<div class="col-md-2 col-sm-2 col-xs-2">'.$preco.'</div>
+				<div class="col-md-2 col-sm-2 col-xs-2">'.$sub.'</div>
+                <div class="col-md-2 col-sm-2 col-xs-2"> <a href ="?acao=del&id='.$id.'">Remover</a></div>
+		   </div>
+            <br>
+			';
+            }
+            
+            
+		}
+	}
+	
+
+		?>
+
+			  <form action="?acao=up" method="post"></form>
 
         <tfoot>
 
@@ -65,25 +91,7 @@
             </tr>
 
         </tfoot>
-
-        <?php
-            echo ' 
-            <tr>
-				<td>'.$nome.'</td>
-				<td><input type = "text" size="3" name="prod['.$id.']" value="'.$qtd.'"/> </td>
-				<td>'.$preco.'</td>
-				<td>'.$sub.'</td>
-                <td> <a href ="?acao=del&id='.$id.'">Remover</a></td>
-			</tr>
-            <br>
-			';
-            }
-            
-            
-		}
-	}
-
-?>	
-
+	
     <a href="index.php" class="btn btn-primary" role="button">Retornar</a>
+	</div>
 <?php require_once("footer.php"); ?>

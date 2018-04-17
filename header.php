@@ -62,7 +62,7 @@
 				
 				
           		<ul class="nav navbar-nav navbar-right">
-            		<li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+            		<li><a href="carrinho.php"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
             		<li class="dropdown">
               			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i><span class="caret"></span></a>
               			<ul class="dropdown-menu">
